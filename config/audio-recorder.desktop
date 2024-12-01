@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Audio Recorder Toggle
+Comment=Toggle System Audio Recording
+Exec=/usr/local/bin/audio-recorder-toggle
+Type=Application
+Categories=AudioVideo;

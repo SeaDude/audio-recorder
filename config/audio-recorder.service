@@ -1,0 +1,11 @@
+[Unit]
+Description=System Audio Recorder Service
+
+[Service]
+Environment=PYTHONPATH=/home/system9/projects/audio-recorder/src
+ExecStart=/usr/bin/python3 /home/system9/projects/audio-recorder/src/recorder_service.py
+WorkingDirectory=/home/system9/projects/audio-recorder
+Restart=always
+
+[Install]
+WantedBy=default.target

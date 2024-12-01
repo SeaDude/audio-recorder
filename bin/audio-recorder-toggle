@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -e /tmp/audio_recorder.sock ]; then
+    echo "TOGGLE" | nc -U /tmp/audio_recorder.sock
+else
+    notify-send "Audio Recorder" "Service not running"
+    systemctl --user restart audio-recorder
+fi
